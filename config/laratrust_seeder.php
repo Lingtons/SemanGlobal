@@ -14,6 +14,18 @@ return [
         'user' => [
             'profile' => 'r,u'
         ],
+        'project_manager' => [
+            'profile' => 'r,u'
+        ],
+        'marketer' => [
+            'profile' => 'r,u'
+        ],
+        'agent' => [
+            'profile' => 'r,u'
+        ],
+        'customer' => [
+            'profile' => 'r,u'
+        ],
     ],
     'permission_structure' => [
         'cru_user' => [
