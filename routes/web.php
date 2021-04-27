@@ -15,11 +15,15 @@ Route::get('/', function () {
     return view('guest.welcome');
 });
 
-Auth::routes();
+Auth::routes(['register' => false]);
 
 //user routes
 Route::group(['namespace' => 'User', 'prefix' => 'user', 'middleware' => 'auth'], function () {
     Route::get('/home', 'HomeController@index')->name('home');
+});
+
+Route::group(['namespace' => 'Manage', 'prefix' => 'manage', 'middleware' => 'auth'], function () {
+    Route::resource('/users', 'UserController')->name('*','manage.user');
 });
 
 
