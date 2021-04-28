@@ -1,7 +1,7 @@
 <header class="header-section">
 
-    <a href="index-2.html" class="site-logo">
-        <img src="img/logo.png" alt="">
+    <a href="{{url('/')}}" class="site-logo">
+        <img src="{{asset('img/logo.png')}}" alt="">
     </a>
     <div class="nav-switch">
         <i class="fa fa-bars"></i>
@@ -15,6 +15,10 @@
 {{--            <li><a href="blog.html">News</a></li>--}}
 {{--            <li><a href="contact.html">Contact</a></li>--}}
             @auth
+
+                @if(auth()->user()->hasRole('superadministrator'))
+                    <li><a href="{{route('manage.sites.index')}}">Sites</a></li>
+                @endif
                 <li><a href="{{route('logout')}}"  onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"><i class="fa fa-sign-out mr-2"></i>Sign Out</a></li>
                 <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

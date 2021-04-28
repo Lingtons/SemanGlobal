@@ -57,8 +57,6 @@
 --}}
 
         <main>
-
-
             @include('partials.main_navigation')
             @yield('content')
         </main>
