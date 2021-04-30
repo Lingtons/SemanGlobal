@@ -7,7 +7,7 @@
 
     <title>{{ config('app.name', 'Laravel') }}</title>
 
-    <link href="img/favicon.ico" rel="shortcut icon" />
+    <link href="{{asset('img/favicon.ico')}}" rel="shortcut icon" />
 
     <link href="https://fonts.googleapis.com/css?family=Sarabun:300,300i,400,400i,500,500i,600,600i,700,700i&amp;display=swap" rel="stylesheet">
 

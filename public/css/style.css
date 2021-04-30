@@ -1801,3 +1801,7 @@ Responsive
 		width: 22px;
 	}
 }
+
+.bg-teal {
+    background-color: #00695c;
+}

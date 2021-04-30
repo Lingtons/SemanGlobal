@@ -2,11 +2,12 @@
 
 namespace App\Http\Controllers\Manage;
 
+use App\Models\Plot;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 
-class UserController extends Controller
+class PlotController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +16,7 @@ class UserController extends Controller
      */
     public function index()
     {
-        $users = User::all();
-        return view('manage.users.index', ['users' => $users]);
+        //
     }
 
     /**
@@ -37,13 +37,7 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        User::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'password' => bcrypt('password')
-        ]);
-
-        return redirect()->back();
+        //
     }
 
     /**
@@ -54,7 +48,9 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        //
+        $plot = Plot::findOrFail($id);
+        $clients = User::whereDoesntHave('roles')->get();
+        return view('manage.sites.plot_detail', ['plot' => $plot, 'clients' => $clients]);
     }
 
     /**

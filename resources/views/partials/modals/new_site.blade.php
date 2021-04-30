@@ -2,7 +2,7 @@
 <div class="modal fade" id="newSiteModal" tabindex="-1" role="dialog" aria-labelledby="addVendorModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <button type="button" class="close p-2" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close pt-2" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
 
@@ -55,7 +55,7 @@
                                 <option value="">Select Type</option>
                                 <option value="commercial">Commercial</option>
                                 <option value="residential">Residential</option>
-                                <option value="Others">Others</option>
+                                <option value="others">Others</option>
                             </select>
                         </div>
                         <div class="form-field mb-2">

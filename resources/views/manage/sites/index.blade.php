@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('content')
 
-<section class="page-top-section h-25 set-bg" data-setbg="{{asset('img/slider/3.jpg')}}">
+<section class="page-top-section h-25 set-bg" data-setbg="{{asset('img/slider/1.jpg')}}">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">

@@ -15,7 +15,7 @@
         </div>
     </div>
     <div class="hero-slider owl-carousel owl-theme">
-        <div class="hs-item set-bg" data-setbg="{{asset('img/slider/1.jpg')}}">
+        <div class="hs-item set-bg" data-setbg="{{asset('img/slider/1.jpg')}}" style="box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-7">
@@ -24,7 +24,7 @@
                 </div>
             </div>
         </div>
-        <div class="hs-item set-bg" data-setbg="{{asset('img/slider/2.jpg')}}">
+        <div class="hs-item set-bg" data-setbg="{{asset('img/slider/2.jpg')}}" style="box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-7">
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="hs-item set-bg" data-setbg="{{asset('img/slider/3.jpg')}}">
+        <div class="hs-item set-bg" data-setbg="{{asset('img/slider/3.jpg')}}" style="box-shadow: inset 0 0 0 1000px rgba(0, 0, 0, 0.5);">
             <div class="container">
                 <div class="row">
                     <div class="col-xl-6 col-lg-7">

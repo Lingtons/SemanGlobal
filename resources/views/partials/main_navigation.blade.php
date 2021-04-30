@@ -9,15 +9,11 @@
     <div class="container">
         <ul class="main-menu">
             <li><a href="{{url('/')}}">Home</a></li>
-{{--            <li><a href="about.html">About Us</a></li>--}}
-{{--            <li><a href="property.html">Property</a></li>--}}
-{{--            <li><a href="developments.html">Developments</a></li>--}}
-{{--            <li><a href="blog.html">News</a></li>--}}
-{{--            <li><a href="contact.html">Contact</a></li>--}}
             @auth
 
-                @if(auth()->user()->hasRole('superadministrator'))
+                @if(auth()->user()->hasRole(['superadministrator','administrator']))
                     <li><a href="{{route('manage.sites.index')}}">Sites</a></li>
+                    <li><a href="{{route('manage.users.index')}}">Users</a></li>
                 @endif
                 <li><a href="{{route('logout')}}"  onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();"><i class="fa fa-sign-out mr-2"></i>Sign Out</a></li>
