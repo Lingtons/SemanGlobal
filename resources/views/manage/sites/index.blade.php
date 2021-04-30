@@ -1,9 +1,5 @@
 @extends('layouts.app')
 @section('content')
-{{--    <div class="banner-area">--}}
-{{--        <h1>Projects / Sites</h1>--}}
-{{--        <p>Configure and manage sites information here</p>--}}
-{{--    </div>--}}
 
 <section class="page-top-section h-25 set-bg" data-setbg="{{asset('img/slider/3.jpg')}}">
     <div class="container">
@@ -35,7 +31,7 @@
 {{--                            <span>from</span>--}}
 {{--                            <h4>$145,000</h4>--}}
 {{--                        </div>--}}
-                        <a href="#" class="site-btn">MORE INFO</a>
+                        <a href="{{route('manage.sites.show', $site->id)}}" class="site-btn">MORE INFO</a>
                     </div>
                 </div>
             </div>

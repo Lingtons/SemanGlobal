@@ -1801,15 +1801,3 @@ Responsive
 		width: 22px;
 	}
 }
-
-.banner-area {
-    background: url(../img/slider/1.jpg) no-repeat center center/cover;
-    padding-top: 100px;
-    padding-left: 30px;
-    padding-bottom: 30px;
-
-}
-
-.banner-area h1, p{
-    color: #f8fafc;
-}

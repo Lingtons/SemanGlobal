@@ -22,7 +22,7 @@ Route::group(['namespace' => 'User', 'prefix' => 'user', 'middleware' => 'auth']
     Route::get('/home', 'HomeController@index')->name('home');
 });
 
-Route::group(['namespace' => 'Manage', 'prefix' => 'manage', 'as' => 'manage.', 'middleware' => 'auth'], function () {
+Route::group(['namespace' => 'Manage', 'prefix' => 'manage', 'as' => 'manage.', 'middleware' => 'role:superadministrator|administrator'], function () {
     Route::resource('/users', 'UserController')->name('*','users');
     Route::resource('/sites', 'SiteController')->name('*','sites');
 });

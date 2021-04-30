@@ -19,6 +19,8 @@ class CreatePlotsTable extends Migration
             $table->unsignedBigInteger('user_id')->nullable();
             $table->string('block')->nullable()->index();
             $table->string('plot_number')->index();
+            $table->string('capacity')->nullable();
+            $table->boolean('sold')->default(false);
             $table->timestamps();
             $table->foreign('site_id')->references('id')->on('sites');
             $table->foreign('user_id')->references('id')->on('users');
